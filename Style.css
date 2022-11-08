@@ -1,0 +1,79 @@
+html{
+  font-family: Arial;
+}
+
+.header {
+  background-color: black;
+  border-width: 8px;
+  border-style: solid;
+  border-color: #f3e806;
+}
+
+h1 {
+  color: #f3e806;
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0px 20px;
+}
+
+.nav {
+  text-transform: uppercase;
+  font-weight: bold;
+  justify-content: center;
+  background-color: yellow;
+  color: black; 
+}
+
+@media (max-width: 1600px) and (min-width: 0px) {
+  .imagenpequena {
+    display: visible;
+    background-color: black;
+  }
+}
+@media (max-width: 2400px) and (min-width: 1600px) {
+  .imagenpequena {
+    display: none;
+    background-color: black;
+  }
+}
+
+@media (min-width: 1600px) and (max-width: 2400px) {
+  .imagengrande {
+    display: visible;
+    background-color: black;
+  }
+}
+@media (max-width: 1600px) and (min-width: 390px) {
+  .imagengrande {
+    display: none;
+    background-color: black;
+  }
+}
+
+h2{
+  color: #f3e806;
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0px 20px;
+  background-color: black;
+}
+
+h3{
+  color: red;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0px 20px;
+}
+
+.parrafoautor {
+  text-align: left;
+}
+.imagenautor {
+  text-align: center;
+}
+
+.footer{
+  background-color: #f3e806;
+}
