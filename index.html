@@ -1,49 +1,59 @@
-<!DOCTYPE html>
-<html lang="es">
-
+<!doctype html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Tres en raya</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>THE FOODIE BLOG</title>
+	
+	<link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Space+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script src="javascript/script.js"></script>
 </head>
-
 <body>
-    <div class="contenedor-juego">
-        <div class="juego-titulo">
-            <h1>TRES EN RAYA</h1>
+    <header>
+        
+        <div>
+            <i class="fas fa-bars" onclick="openMenu()"></i>
+            <nav id="menu">
+                <span id="close"><i class="fas fa-times" onclick="closeMenu()"></i></span>
+                <ul>
+                    <li><a href="madrid.html" onclick="closeMenu()">Madrid</a></li>
+                    <li><a href="#" onclick="closeMenu()">Barcelona</a></li>
+                    <li><a href="thedesigner.html" onclick="closeMenu()">San Sebastián</a></li>
+                    
+                </ul>
+            </nav>
         </div>
-        <div class="juego-titulo">
-            <h2>INSTRUCCIONES</h2>
-            <div class="juego-titulo2">
-                <p> -Haga una linea de tres "X" o "O" para ganar <br>
-                    - Solo se puede usar una casillas vacías <br>
-                    - El juego termina cuando las X o los O <br>
-                    consiguen hacer una línea con 3 simbolos.</p>
+    </header>    
+      
+    
+    <div id="home-background">
+        <h1>THE FOODIE BLOG</h1> 
+    </div>
+    
+    
+    <section class="half-screen">
+        <div class="mitad">
+            <div class="text">
+                <h2>¿Quiénes somos?</h2>
+                <p>The Foodie Blog es una comunidad que trata de compartir con locales y viajeros los mejores restaurantes de cada ciudad de España. Tras probarlos uno por uno, te ofrecemos una lista con las mejores opciones y dandote los detalles necesarios, ya sea el estilo de comida, ubicación o precio medio, para que elijas el lugar perfecto para la ocasión.<br><br>Esta idea surge por dos razones. En primer lugar, el amor por la buena gastronomía y la cultura española de celebrar y reunirse alrededor de una mesa. En segundo lugar, ser capaz de compartir todo aquello que tienen nuestras ciudades por ofrecernos, desde aquellos restaurantes más conocidos a los pequeños bares de tapas escondidos en algún rincón de la ciudad.</p>
             </div>
         </div>
-
-        <p id="juego-info" class="juego-info"></p>
-        <div class="juego-cuadricula">
-
-            <div class="cuadro"></div>
-            <div class="cuadro"></div>
-            <div class="cuadro"></div>
-            <div class="cuadro"></div>
-            <div class="cuadro"></div>
-            <div class="cuadro"></div>
-            <div class="cuadro"></div>
-            <div class="cuadro"></div>
-            <div class="cuadro"></div>
-
+        <div class="mitad">
+                <img src="CSS/pics/mesa.home.jpg">
         </div>
-
-        <div id="juego-boton" class="juego-boton">Volver a jugar</div>
-    </div>
-
-
-    <script src="script.js"></script>
+    </section>
+    
+    <footer>
+        <p>Envíos <br>
+        Aviso legal<br>
+        Política de privacidad<br>
+        Cookies</p>
+    </footer>  
+    
 </body>
-
 </html>

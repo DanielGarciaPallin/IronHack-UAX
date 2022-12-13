@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p, figcaption {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+h1, h2, h3 {
+    font-family: 'Space Mono', monospace;
+    font-weight: 400;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    display: flex;
+    padding: 30px 0px;
+    background-color: white;
+    width: 100vw;
+}
+
+
+nav {
+    display: flex;
+    width: 90vw;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+
+nav ul li {
+    font-family: 'Space Mono', monospace;
+    font-size: 14px;
+    display: inline-block;
+    padding-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.fa-bars {
+    position: absolute;
+    top: -100px;
+    right: -100px;
+}
+
+.fa-times {
+    position: absolute;
+    top: -100px;
+    right: -100px;
+}
+
+#home-background{
+    padding-top: 70px;
+    background-image: url(pics/restaurante.inicio.jpg);
+    height: 100vh;
+    background-size: cover;
+}
+
+#home-background h1 {
+    text-align: center;
+    padding-top: 70px;
+    text-align: center;
+    color: white;
+}
+
+.half-screen{
+    display: flex;
+    margin: 150px 0px;
+    flex-wrap: wrap;
+
+}
+
+.mitad{
+    width: 50%;
+    padding-right: 90px;
+    display: flex;
+}
+
+.mitad img {
+    width: 100%;
+}
+
+.text{
+    padding-left: 125px;
+}
+
+.text p{
+    margin-left: 40px;
+}
+
+footer{
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 150px;
+    padding: 70 0px;
+}
+
+.introduction{
+    margin-top: 100px;
+    text-align: center;
+    width: 100vw;
+}
+
+.introduction h1 {
+    color: black;
+}
+
+.introduction img {
+    padding: 50px 80px 0px 80px;
+    width: 100%;
+}
+
+@media only screen and (max-width: 600px){
+    
+p, figcaption {
+    font-size: 12px;
+}
+
+h1, h2, h3 {
+    font-size: 25px;
+}
+    
+#logo {
+    max-width: 150px;
+}
+  
+#home-background{
+    flex-wrap: wrap;
+    padding-top: 0px;
+}    
+    
+#home-background figure {
+    width: 100%;
+}
+    
+.half-screen{
+        margin: 40px 0px;
+    }
+
+.mitad{
+    width: 100%;
+    padding-right: 0px;
+    padding: 0px 20px;
+}
+    
+.mitad img {
+    margin-top: 30px;
+}
+ 
+.text{
+    padding-left: 0px;
+}
+
+.text h1,h2 {
+    text-align: center;
+}
+    
+.text p{
+    margin-left: 0px;
+}
+
+header {
+    padding: 20px 0;    
+}
+    
+#logo {
+    margin: auto;
+}
+    
+.fa-bars {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 0.5em;
+    color: #5E4036;
+    font-size: 20px;
+}
+
+nav {
+        width: 100vw;
+}
+    
+#menu {
+    position: absolute;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    transition: 1s ease-in-out;
+    margin-right: 0;
+}
+
+#menu > ul {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+#menu > ul > li {
+    list-style: none;
+    padding: 10px 30px;
+}
+
+#menu > ul > li > a {
+    color: black;
+    text-decoration: none;
+    font-size: 12px;
+    transition: all 0.4s ease-in-out;
+}
+
+#menu > ul > li:hover > a {
+    color: pink;
+    font-weight: bold;
+}
+
+#close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 12px;
+    color: #5E4036;
+}
+
+#close:hover {
+    color: pink;
+    cursor: pointer;
+}
+
+}
+
+
+
+
